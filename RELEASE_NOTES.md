@@ -1,14 +1,17 @@
-# Crash Remix 0.1.1-phase0
+# Crash Remix 0.1.2-phase0
 
-Corrected Phase 0 graybox build for Android device testing.
+Phase 0 graybox update for Android device testing.
 
 ## Fixed
 
-- Authored tuning resources now load from the exported Android package.
-- The live-tuning HUD now shows the tuning fingerprint and all five resource
-  paths instead of remaining at `Tuning not loaded`.
-- Added an exported-pack startup smoke test so editor-only tests cannot miss
-  this resource-loader difference again.
+- Pressing SPIN now visibly rotates the player for the authored 0.45-second
+  active window.
+- The spin visual returns to its forward pose when the action ends or the
+  player respawns.
+- The existing 360-degree attack hitbox and airborne gravity stall remain
+  connected to the same action.
+
+This build includes the exported-tuning loading correction from `0.1.1`.
 
 The environment remains deliberately monochrome because this phase tests
 movement, camera, controls, and tuning in a graybox toybox.
@@ -23,6 +26,6 @@ movement, camera, controls, and tuning in a graybox toybox.
 
 SHA-256:
 
-`3a57f7d1d0e1bcaa17c9ab0e11059116f1ddf285ab236481ecf2cf1279814156`
+`3e0e53e24afbf0199cf1f1dd362855ccd8a526533f5b4cd64d29135636cb164b`
 
 The APK is a development build and is not distributed through Google Play.
